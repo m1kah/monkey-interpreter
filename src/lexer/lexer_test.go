@@ -63,6 +63,9 @@ func TestNextTokenWithIdentifiers(t *testing.T) {
     } else {
         return false;
     }
+    
+    10 == 10;
+    10 != 9;
     `
 
     tests := []struct {
@@ -134,6 +137,14 @@ func TestNextTokenWithIdentifiers(t *testing.T) {
         {token.FALSE, "false"},
         {token.SEMICOLON, ";"},
         {token.RBRACE, "}"},
+        {token.INT, "10"},
+        {token.EQ, "=="},
+        {token.INT, "10"},
+        {token.SEMICOLON, ";"},
+        {token.INT, "10"},
+        {token.NOT_EQ, "!="},
+        {token.INT, "9"},
+        {token.SEMICOLON, ";"},
         {token.EOF, ""},
     }
 
