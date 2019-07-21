@@ -6,7 +6,7 @@ Run tests
 
 Run repl
 
-    GOPATH=`pwd` go run ./src/main.go 
+    GOPATH=`pwd` go run ./src/main
 
 Example repl output
     

@@ -7,7 +7,7 @@ import (
     "lexer"
     "parser"
     "evaluator"
-    "monkey/object"
+    "object"
 )
 
 const PROMPT = ">> "
