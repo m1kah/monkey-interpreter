@@ -3,6 +3,7 @@ Run tests
     GOPATH=`pwd` go test ./src/lexer
     GOPATH=`pwd` go test ./src/parser
     GOPATH=`pwd` go test ./src/evaluator
+    GOPATH=`pwd` go test ./src/object
 
 Run repl
 
